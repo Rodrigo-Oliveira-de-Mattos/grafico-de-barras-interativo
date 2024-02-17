@@ -1,7 +1,10 @@
 @media only screen and (min-width: 700px) {
+
     main{
         width: 40rem;
         transition: 1s;
+        scale: 1.5;
+
     }
 
     .graficos .grafico-dia .barra{
