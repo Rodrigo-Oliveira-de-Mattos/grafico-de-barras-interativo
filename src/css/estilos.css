@@ -1,0 +1,159 @@
+body{
+    background: var(--neutro-2);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main{
+    width: 34.5rem;
+    transition: 1s;
+}
+
+.meu-saldo{
+    background: var(--primary-padrao);
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--neutro-1);
+}
+
+.meu-saldo .saldo-atual{
+    font-size: 1.5rem;
+}
+
+.meu-saldo .saldo-atual span{
+    line-height: 3rem;
+}
+
+.meu-saldo img{
+    height: 4rem;
+}
+
+.conteudo{
+    background: var(--neutro-1);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    display: grid;
+
+    grid-template-areas: 
+    "gastos-dias gastos-dias" 
+    "grafico grafico" 
+    "info-total-mes info-comparacao"
+    ;
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 4rem 22rem 6rem;
+    gap: 1.5rem 0;
+}
+
+.gastos-quantidade-dias{
+    grid-area: gastos-dias;
+    font-size: 1.8rem;
+    color: var(--neutro-4);
+}
+
+.graficos{
+    grid-area: grafico;
+    border-bottom: solid var(--neutro-2) 1px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.graficos .grafico-dia{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2.5rem;
+    color: var(--neutro-3);
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+}
+
+.gasto-dia.hidden{
+    z-index: -1;
+}
+
+.gasto-dia{
+    background-color: var(--neutro-4);
+    color: var(--neutro-1);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.graficos .grafico-dia:nth-child(1) .barra{
+    height: 25%;
+}
+
+.graficos .grafico-dia:nth-child(2) .barra{
+    height: 50%;
+}
+
+.graficos .grafico-dia:nth-child(3) .barra{
+    background-color: var(--primary-secundario);
+    height: 75%;
+}
+
+.graficos .grafico-dia:nth-child(4) .barra{
+    height: 45%;
+}
+
+.graficos .grafico-dia:nth-child(5) .barra{
+    height: 35%;
+}
+
+.graficos .grafico-dia:nth-child(6) .barra{
+    height: 58%;
+}
+
+.graficos .grafico-dia:nth-child(7) .barra{
+    height: 40%;
+}
+
+
+.graficos .grafico-dia .barra{
+    width: 3.2rem;
+    background-color: var(--primary-padrao);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    animation: up 1s;
+}
+
+@keyframes up {
+    0%{
+        height: 0%;
+    }
+}
+
+.graficos .grafico-dia .barra:hover{
+    opacity: 0.8;
+}
+
+.gastos-totais{
+    grid-area: info-total-mes;
+    font-size: 2rem;
+}
+
+.comparacao-ultimo-mes{
+    grid-area: info-comparacao;
+    font-size: 1.3rem;
+    text-align: end;
+    align-self: flex-end;
+}
+
+.gastos-totais, .comparacao-ultimo-mes{
+    color: var(--neutro-4);
+}
+
+.comparacao-ultimo-mes span, .gastos-totais span{
+    font-size: 1.5rem;
+    color: var(--neutro-3);
+}

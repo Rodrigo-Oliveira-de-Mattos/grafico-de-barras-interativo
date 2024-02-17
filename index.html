@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de barras interativo</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variaveis.css">
+    <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+</head>
+
+<body>
+    <main>
+        <header class="meu-saldo">
+            <div class="saldo-atual">
+                <span>Meu saldo</span>
+                <h2>$921.48</h2>
+            </div>
+            <img src="src/logo.svg" alt="logo do banco">
+        </header>
+
+        <section class="conteudo">
+            <div class="gastos-quantidade-dias">
+                <h2>Gastos - Últimos 7 dias</h2>
+            </div>
+
+            <div class="graficos">
+                
+                <div class="grafico-dia">
+                    <span class="hidden gasto-dia">--</span>
+                    <div class="barra"></div>
+                    <span class="dia-semana">seg</span>
+                </div>
+                <div class="grafico-dia">
+                    <span class="hidden gasto-dia">--</span>
+                    <div class="barra"></div>
+                    <span class="dia-semana">ter</span>
+                </div>
+                <div class="grafico-dia">
+                    <span class="hidden gasto-dia">--</span>
+                    <div class="barra"></div>
+                    <span class="dia-semana">qua</span>
+                </div>
+                <div class="grafico-dia">
+                    <span class="hidden gasto-dia">--</span>
+                    <div class="barra"></div>
+                    <span class="dia-semana">qui</span>
+                </div>
+                <div class="grafico-dia">
+                    <span class="hidden gasto-dia">--</span>
+                    <div class="barra"></div>
+                    <span class="dia-semana">sex</span>
+                </div>
+                <div class="grafico-dia">
+                    <span class="hidden gasto-dia">--</span>
+                    <div class="barra"></div>
+                    <span class="dia-semana">sab</span>
+                </div>
+                <div class="grafico-dia">
+                    <span class="hidden gasto-dia">--</span>
+                    <div class="barra"></div>
+                    <span class="dia-semana">dom</span>
+                </div>
+
+            </div>
+
+            <div class="gastos-totais">
+                <span>Total esse mês</span>
+                <h2>$478.33</h2>
+            </div>
+
+            <div class="comparacao-ultimo-mes">
+                <h3>+2.4%</h3>
+                <span>desde o último mês</span>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

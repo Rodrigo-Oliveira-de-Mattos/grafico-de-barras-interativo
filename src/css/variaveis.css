@@ -1,0 +1,8 @@
+:root{
+    --primary-padrao: hsl(10, 79%, 65%);
+    --primary-secundario: hsl(186, 34%, 60%);
+    --neutro-4: hsl(25, 47%, 15%);
+    --neutro-3: hsl(28, 10%, 53%);
+    --neutro-2: hsl(27, 66%, 92%);
+    --neutro-1: hsl(33, 100%, 98%);
+}
